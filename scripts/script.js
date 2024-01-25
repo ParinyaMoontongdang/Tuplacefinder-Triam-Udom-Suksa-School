@@ -2,6 +2,7 @@ function search() {
   var inputNamerValue = document.getElementById("search").value;
   var modal = document.getElementById("popup");
   var span = document.getElementsByClassName("close")[0];
+  var HeadPop = document.getElementById("headPop");
   var roomHeading = "";
   var roomDetails = "";
   //   alert("Hello, " + inputNamerValue + "!");
@@ -18,6 +19,7 @@ function search() {
   else{
     roomHeading = "ไม่พบห้อง!!";
     roomDetails = "กรุณากรอกหมายเลขห้องให้ถูกต้อง";
+    HeadPop.style.color = "red";
   }
 
   // Set the message and display the popup
@@ -28,6 +30,7 @@ function search() {
   // When the user clicks on <span> (x), close the modal
   span.onclick = function () {
     modal.style.display = "none";
+    HeadPop.style.color = "black";
   };
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function (event) {
