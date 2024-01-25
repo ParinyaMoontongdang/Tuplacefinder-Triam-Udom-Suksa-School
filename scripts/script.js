@@ -36,6 +36,7 @@ function search() {
   window.onclick = function (event) {
     if (event.target == modal) {
       modal.style.display = "none";
+      HeadPop.style.color = "black";
     }
   };
 }
