@@ -12,8 +12,8 @@ function search() {
   document.getElementById('search').value = '';
 
   // Check room
-  if (inputNamerValue == 123){
-    roomHeading = "ห้อง 123 อยู่ที่ตึก 1";
+  if (inputNamerValue == 28 || inputNamerValue == 29 || inputNamerValue == 32 || inputNamerValue == 38 || inputNamerValue == 39 || inputNamerValue == 48 || inputNamerValue == 49 || inputNamerValue == 58 || inputNamerValue == 59){
+    roomHeading = "ห้อง " + String(inputNamerValue)  + " อยู่ที่ตึก 1";
     roomDetails = "หมายเหตุเพิ่มเติม : ห้องพักครู (57) หัวหน้ากลุ่มสาระฯ ภาษาต่างประเทศที่ 2 ห้องพยาบาล";
   }
   else{
